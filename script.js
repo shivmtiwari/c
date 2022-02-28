@@ -1,3 +1,4 @@
+
 // Sticky Navigation Menu JS Code
 let nav = document.querySelector("nav");
 let scrollBtn = document.querySelector(".scroll-button a");
@@ -11,7 +12,6 @@ window.onscroll = function() {
     nav.classList.remove("sticky");
     scrollBtn.style.display = "none";
   }
-
 }
 
 // Side NavIgation Menu JS Code
@@ -45,8 +45,6 @@ for (var i = 0; i < navLinks.length; i++) {
 }
 
 // popup js 
-
-
 const popupScreen = document.querySelector(".popup-screen");
 const popupBox = document.querySelector(".popup-box");
 const closeBtn = document.querySelector(".close-btn");
@@ -60,7 +58,7 @@ window.addEventListener("load", () => {
 closeBtn.addEventListener("click", () => {
   popupScreen.classList.remove("active"); //Close the popup screen on click the close button.
   //Create a cookie for a day (to expire within a day) on click the close button.
-  document.cookie = "WebsiteName=testWebsite; max-age=" + 24 * 60 * 60; //1 day = 24 hours = 24*60*60
+  document.cookie = "WebsiteName=testWebsite; max-age=" +60;  //1 day = 24 hours = 24*60*60
 });
 
 //Use the created cookie to hide or show the popup screen.
@@ -73,7 +71,7 @@ else{
   popupScreen.style.display = "flex"; //Show the popup screen if the cookie is expired.
 }
 
-
+// form 
 const form = document.querySelector("form"),
 statusTxt = form.querySelector(".button-area span");
 
@@ -89,7 +87,7 @@ form.onsubmit = (e)=>{
   xhr.onload = ()=>{
     if(xhr.readyState == 4 && xhr.status == 200){
       let response = xhr.response;
-      if(response.indexOf("Email and message field is required!") != -1 || response.indexOf("Enter a valid email address!") != -1 || response.indexOf("Sorry, failed to send your message!") != -1){
+      if(response.indexOf("Email and Phone field is required!") != -1 || response.indexOf("Enter a valid email address!") != -1 || response.indexOf("Sorry, failed to send your message!") != -1){
         statusTxt.style.color = "red";
       }else{
         form.reset();

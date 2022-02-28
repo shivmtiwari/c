@@ -47,10 +47,6 @@
   }
 }
 @media (max-width: 770px) {
-
-
-
-
   .footer .grid-4 {
     grid-template-columns: repeat(2, 1fr);
     max-width: 500px;
@@ -199,3 +195,33 @@
     }
 
   }
+
+
+  
+@media (max-width: 1020px) {
+  .wrapper .card {
+    width: calc(50% - 20px);
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 698px) {
+  .wrapper .card {
+    width: 100%;
+  }
+  .wrapper {
+    padding: 15px;
+  }
+}
+
+ @media (max-width: 1216px) {
+  .row {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .col-1 {
+    margin-left: 15px;
+  }
+}
+

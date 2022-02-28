@@ -207,8 +207,8 @@ nav .navbar {
 }
 nav .navbar .logo a {
   font-weight: 600;
-  font-size: 25px;
-  color: #1100ff;
+  font-size: 30px;
+  color: #000000;
 }
 nav.sticky .navbar .logo a {
   color: rgb(79, 4, 255);
@@ -238,9 +238,10 @@ nav.sticky .menu a:hover {
   color: #0e2431;
 }
 .navbar .media-icons a {
-  color: #4070f4;
-  font-size: 18px;
+  color: #000000;
+  font-size: 20px;
   margin: 0 6px;
+  
 }
 nav.sticky .media-icons a {
   color: rgb(0, 0, 0);
@@ -396,15 +397,16 @@ nav.sticky .menu-btn {
   border-radius: 8px;
   cursor: pointer;
   /* background: linear-gradient(313deg,rgba(149, 0, 255, 1) 19%,rgba(17, 4, 249, 1) 100%,rgba(3, 4, 248, 1) 100%); */
-  background-color: #222635;
+  background-color: var(--main-color);
   transition: all 0.3s ease;
 }
 /* .card .btn button {
   background: linear-gradient(313deg,rgba(149, 0, 255, 1) 19%,rgba(17, 4, 249, 1) 100%,rgba(3, 4, 248, 1) 100%);
 } */
 .card .btn button:hover {
-  background: linear-gradient(313deg, rgba(17, 4, 249, 1) 0%, rgba(142, 3, 248, 1) 80% );
+  /* background: linear-gradient(313deg,rgba(149, 0, 255, 1) 19%,rgba(17, 4, 249, 1) 100%,rgba(3, 4, 248, 1) 100%); */
   color: rgb(255, 255, 255);
+  background-color: rgb(88, 26, 231);
 }
 
 
@@ -550,32 +552,4 @@ nav.sticky .menu-btn {
 }
 
 
-
-
-@media (max-width: 1020px) {
-  .wrapper .card {
-    width: calc(50% - 20px);
-    margin-bottom: 40px;
-  }
-}
-@media (max-width: 698px) {
-  .wrapper .card {
-    width: 100%;
-  }
-  .wrapper {
-    padding: 15px;
-  }
-}
-
- @media (max-width: 1216px) {
-  .row {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .col-1 {
-    margin-left: 15px;
-  }
-}
 
