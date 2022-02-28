@@ -37,6 +37,109 @@
   background: #4070f4;
 }
 
+/* navbar styling */
+nav {
+  /* position: fixed; */
+  width: 100%;
+  padding: 20px 0;
+  z-index: 998;
+  transition: all 0.3s ease;
+  font-family: "", sans-serif;
+}
+nav.sticky {
+  /* background: #796aff; */
+  /* background-color: #D5F3FF; */
+  background-color: #fff;
+  padding: 13px 0;
+}
+nav .navbar {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+nav .navbar .logo a {
+  font-weight: 600;
+  font-size: 30px;
+  color: #000000;
+}
+nav.sticky .navbar .logo a {
+  color: rgb(79, 4, 255);
+}
+nav .navbar .menu {
+  display: flex;
+  position: relative;
+}
+nav .navbar .menu li {
+  list-style: none;
+  margin: 0 18px;
+}
+.navbar .menu a {
+  font-size: 18px;
+  font-weight: 400;
+  color: #0e2431;
+  padding: 6px 0;
+  transition: all 0.4s ease;
+}
+.navbar .menu a:hover {
+  color: #4070f4;
+}
+nav.sticky .menu a {
+  color: rgb(0, 0, 0);
+}
+nav.sticky .menu a:hover {
+  color: #0e2431;
+}
+.navbar .media-icons a {
+  color: #000000;
+  font-size: 20px;
+  margin: 0 6px;
+  
+}
+nav.sticky .media-icons a {
+  color: rgb(0, 0, 0);
+}
+
+/* Side Navigation Menu Button CSS */
+nav .menu-btn,
+.navbar .menu .cancel-btn {
+  position: absolute;
+  color: #fff;
+  right: 30px;
+  top: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: none;
+}
+nav .menu-btn {
+  color: #4070f4;
+}
+nav.sticky .menu-btn {
+  color: #fff;
+}
+.navbar .menu .menu-btn {
+  color: #fff;
+}
+
+/* Scroll TO Top Button CSS */
+.scroll-button a {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  background: #1115ff;
+  padding: 7px 12px;
+  font-size: 18px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.15);
+  display: none;
+}
+
+
+
 /* popup */
 .popup-screen{
   z-index: 999999;
@@ -181,107 +284,6 @@ form .button-area{
 }
 
 
-
-/* navbar styling */
-nav {
-  /* position: fixed; */
-  width: 100%;
-  padding: 20px 0;
-  z-index: 998;
-  transition: all 0.3s ease;
-  font-family: "", sans-serif;
-}
-nav.sticky {
-  /* background: #796aff; */
-  /* background-color: #D5F3FF; */
-  background-color: #fff;
-  padding: 13px 0;
-}
-nav .navbar {
-  display: flex;
-  max-width: 1200px;
-  margin: auto;
-  justify-content: space-between;
-  align-items: center;
-  margin: auto;
-}
-nav .navbar .logo a {
-  font-weight: 600;
-  font-size: 30px;
-  color: #000000;
-}
-nav.sticky .navbar .logo a {
-  color: rgb(79, 4, 255);
-}
-nav .navbar .menu {
-  display: flex;
-  position: relative;
-}
-nav .navbar .menu li {
-  list-style: none;
-  margin: 0 18px;
-}
-.navbar .menu a {
-  font-size: 18px;
-  font-weight: 400;
-  color: #0e2431;
-  padding: 6px 0;
-  transition: all 0.4s ease;
-}
-.navbar .menu a:hover {
-  color: #4070f4;
-}
-nav.sticky .menu a {
-  color: rgb(0, 0, 0);
-}
-nav.sticky .menu a:hover {
-  color: #0e2431;
-}
-.navbar .media-icons a {
-  color: #000000;
-  font-size: 20px;
-  margin: 0 6px;
-  
-}
-nav.sticky .media-icons a {
-  color: rgb(0, 0, 0);
-}
-
-/* Side Navigation Menu Button CSS */
-nav .menu-btn,
-.navbar .menu .cancel-btn {
-  position: absolute;
-  color: #fff;
-  right: 30px;
-  top: 20px;
-  font-size: 20px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  display: none;
-}
-nav .menu-btn {
-  color: #4070f4;
-}
-nav.sticky .menu-btn {
-  color: #fff;
-}
-.navbar .menu .menu-btn {
-  color: #fff;
-}
-
-/* Scroll TO Top Button CSS */
-.scroll-button a {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  color: #fff;
-  background: #1115ff;
-  padding: 7px 12px;
-  font-size: 18px;
-  border-radius: 6px;
-  box-shadow: rgba(0, 0, 0, 0.15);
-  display: none;
-}
 
 .community1 {
   max-width: 1200px;
