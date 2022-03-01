@@ -60,6 +60,7 @@
 
   .footer-newstletter {
     grid-column: 1 / 3;
+    padding: 20px;
   }
 
   .grid-4-col {
@@ -68,9 +69,13 @@
   }
 
   .footer-input-wrap {
-    max-width: 300px;
+    max-width: 250px;
     margin: 0.95rem auto 0 auto;
     grid-template-columns: auto 45px;
+  }
+  .input-arrow {
+    font-size: 1rem;
+    padding-right: 20px;
   }
 
   .bottom-footer {
